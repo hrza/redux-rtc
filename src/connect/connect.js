@@ -3,7 +3,7 @@ const { flow } = require('rp-utils');
 
 const permissions = {
     audio: true,
-    video: true,
+    video: false,
     data: true
 }
 
