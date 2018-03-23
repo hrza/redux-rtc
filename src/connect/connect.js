@@ -43,7 +43,7 @@ const Connect = (sessionDescription, options) => init.then(RTC => new Promise((r
 
     connection.sdpConstraints.mandatory = {
         OfferToReceiveAudio: true,
-        OfferToReceiveVideo: true
+        OfferToReceiveVideo: false
     };
 
     if (options.onstream) connection.onstream = options.onstream;
