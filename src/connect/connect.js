@@ -40,6 +40,7 @@ const Connect = (sessionDescription, options) => init.then(RTC => new Promise((r
 
     connection.enableFileSharing = true; 
     connection.session = permissions;
+    connection.mediaConstraints = permissions;
 
     connection.sdpConstraints.mandatory = {
         OfferToReceiveAudio: true,
