@@ -981,7 +981,6 @@ var _require = __webpack_require__(0),
 
 var permissions = {
     audio: true,
-    video: true,
     data: true
 };
 
@@ -1037,7 +1036,7 @@ var Connect = function Connect(sessionDescription, options) {
 
             connection.sdpConstraints.mandatory = {
                 OfferToReceiveAudio: true,
-                OfferToReceiveVideo: true
+                OfferToReceiveVideo: false
             };
 
             if (options.onstream) connection.onstream = options.onstream;
