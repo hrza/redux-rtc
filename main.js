@@ -1110,7 +1110,7 @@ var _require = __webpack_require__(9),
     onunload = _require.onunload;
 
 var ROOM_URL = function ROOM_URL(id) {
-    return 'https://redux-rtc.firebaseio.com/rooms/' + id + '.json';
+    return 'https://chessemy-rtc.firebaseio.com/rooms/' + id + '.json';
 };
 
 var createRoom = function createRoom(_, onstream) {
