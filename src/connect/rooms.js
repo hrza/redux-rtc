@@ -1,7 +1,7 @@
 const connect = require('./connect');
 const { onunload } = require('../utils/browser');
 
-const ROOM_URL = id => `https://redux-rtc.firebaseio.com/rooms/${id}.json`;
+const ROOM_URL = id => `https://chessemy-rtc.firebaseio.com/rooms/${id}.json`;
 
 const createRoom = (_, onstream) => 
     connect(null, {
